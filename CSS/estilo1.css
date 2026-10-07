@@ -136,7 +136,7 @@ article #main-col{
 ul#servicios li{
     list-style: none;
     padding: 20px;
-    border:1px solid #ccc;
+    border:1px solid black;
     margin-bottom:5px;
     background-color: #e6e6e6;
 }
@@ -167,6 +167,26 @@ footer{
 
 /*media queries*/
 @media(max-width: 768px){
+  #cabecera h1, 
+  #showcase h1, 
+  header h1 {
+    font-size: 26px !important;    /* Reduce el tamaño para que entre la palabra completa */
+    line-height: 1.2 !important;   /* Separa un poco las líneas verticales */
+    word-break: break-word;        /* Si la palabra fuera aún muy larga, evita que se salga */
+    text-align: center;
+    padding: 0 10px;               /* Da un pequeño margen a los lados */
+  }
+
+  /* Reducir también el texto de abajo si es necesario */
+  #cabecera p, 
+  #showcase p {
+    font-size: 14px !important;
+    padding: 0 15px;
+  }
+
+
+
+
     header #marca,
     header nav,
     header nav li,
